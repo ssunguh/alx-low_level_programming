@@ -10,7 +10,7 @@ int main (void)
 {
 	char *output = "_putchar\n";
 
-	while (output)
+	while (*output)
 	{
 		_putchar(*output);
 		output++;
