@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		if (*s == '\0')
 		{
-			*s = *(temp + count);
+			s = (temp + count);
 		}
 		else
 		{
