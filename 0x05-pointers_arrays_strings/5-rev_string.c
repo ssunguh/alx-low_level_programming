@@ -17,15 +17,18 @@ void rev_string(char *s)
 		s++;
 	}
 	count--;
-	--s;
 
-	char *temp = s;
-	int i = 0;
-
-	s = first;
-	while (--count >= 0)
+	while (*s == '\0' || count >= 0)
 	{
-		*temp += s[i + count];
+		if (*s == '\0')
+		{
+			*s = *(first + count);
+		}
+		else
+		{
+			*s += *(first + count);
+		}
+		count--;
 	}
-	*temp += '\0';
+	*s += '\0';
 }
