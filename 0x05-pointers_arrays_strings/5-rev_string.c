@@ -11,13 +11,14 @@ void rev_string(char *s)
 	int count = 0;
 	int i = 0;
 
+	char *first = &(s[0]);
+
 	while (*s != '\0')
 	{
 		count++;
 		s++;
 	}
 	count--;
-	s -= count;
 
 	while (i < count)
 	{
