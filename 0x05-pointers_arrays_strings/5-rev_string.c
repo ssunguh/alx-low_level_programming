@@ -20,7 +20,7 @@ void rev_string(char *s)
 
 	while (count >= 0)
 	{
-		if (*s != '\0')
+		if (*s == '\0')
 		{
 			*s = *(first + count);
 		}
