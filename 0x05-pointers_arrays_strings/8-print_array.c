@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - prints out the second half of a string
  * @a: pointer to an array of integers
