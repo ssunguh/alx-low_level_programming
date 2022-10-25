@@ -19,7 +19,7 @@ void rev_string(char *s)
 	count--;
 	s = first;
 
-	char *temp;
+	char *temp = '\0';
 	while (count >= 0)
 	{
 		if (temp == '\0')
