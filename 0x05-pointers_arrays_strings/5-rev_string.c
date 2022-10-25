@@ -9,26 +9,29 @@
 void rev_string(char *s)
 {
 	int count = 0;
-	char *first = &(s[0]);
-	
+	char *last = &(s[0]);
+
 	while (*s != '\0')
 	{
 		count++;
 		s++;
 	}
 	count--;
+	s = last;
 
+	char *temp;
 	while (count >= 0)
 	{
-		if (*s == '\0')
+		if (temp == '\0')
 		{
-			*s = *(first + count);
+			temp = s[count];
 		}
 		else
 		{
-			*s += *(first + count);
+			temp += s[count];
 		}
 		count--;
 	}
-	*s += '\0';
+
+	_putchar('\n');
 }
