@@ -36,11 +36,13 @@ int _atoi(char *s)
 					}
 				}
 				num += dig;
-				
+
 				temp--;
 				nums--;
 			}
 		}
 		s++;
 	}
+
+	return (num);
 }
