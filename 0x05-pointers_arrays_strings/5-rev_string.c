@@ -19,6 +19,7 @@ void rev_string(char *s)
 	}
 	count--;
 	//s = first;
+	int temp = count + 1;
 
 	while (count >= 0)
 	{
@@ -26,6 +27,7 @@ void rev_string(char *s)
 		s++;
 		count--;
 	}
+	s = first + temp;
 	/*while (i < count)
 	{
 		char temp = s[count];
