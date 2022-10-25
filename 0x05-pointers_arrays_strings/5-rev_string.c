@@ -30,5 +30,4 @@ void rev_string(char *s)
 		}
 		count--;
 	}
-	*s += '\0';
 }
