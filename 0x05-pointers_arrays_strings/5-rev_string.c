@@ -17,8 +17,9 @@ void rev_string(char *s)
 		s++;
 	}
 	count--;
+	--s;
 
-	char *temp = &(s[count]);
+	char *temp = s;
 	int i = 0;
 
 	s = first;
