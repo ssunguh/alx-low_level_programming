@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int count = 0;
-	char *first = &(s[0]);
+	char *temp = &(s[0]);
 
 	while (*s != '\0')
 	{
@@ -17,18 +17,16 @@ void rev_string(char *s)
 		s++;
 	}
 	count--;
-	s = first;
 
-	char *temp = '\0';
 	while (count >= 0)
 	{
-		if (temp == '\0')
+		if (*s == '\0')
 		{
-			temp = s[count];
+			*s = temp[count];
 		}
 		else
 		{
-			*temp += s[count];
+			*s += temp[count];
 		}
 		count--;
 	}
