@@ -18,7 +18,7 @@ void puts2(char *str)
 		str++;
 	}
 	str = first;
-	
+
 	while (i < count)
 	{
 		if (i % 2 == 0)
